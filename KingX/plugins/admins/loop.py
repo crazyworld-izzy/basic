@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ValenciaXMusic import app
-from ValenciaXMusic.utils.database import get_loop, set_loop
-from ValenciaXMusic.utils.decorators import AdminRightsCheck
-from ValenciaXMusic.utils.inline import close_markup
+from KingX import app
+from KingX.utils.database import get_loop, set_loop
+from KingX.utils.decorators import AdminRightsCheck
+from KingX.utils.inline import close_markup
 from config import BANNED_USERS
 
 
