@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ValenciaXMusic import app
-from ValenciaXMusic.core.call import Hotty
+from KingX import app
+from KingX.core.call import Hotty
 
 welcome = 20
 close = 30
