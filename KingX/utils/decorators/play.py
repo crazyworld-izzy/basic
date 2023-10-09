@@ -9,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ValenciaXMusic import YouTube, app
-from ValenciaXMusic.misc import SUDOERS
-from ValenciaXMusic.utils.database import (
+from KingX import YouTube, app
+from KingX.misc import SUDOERS
+from KingX.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from ValenciaXMusic.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from ValenciaXMusic.utils.inline import botplaylist_markup
+from KingX.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
 
