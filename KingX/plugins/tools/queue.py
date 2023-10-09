@@ -6,12 +6,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from ValenciaXMusic import app
-from ValenciaXMusic.misc import db
-from ValenciaXMusic.utils import HottyBin, get_channeplayCB, seconds_to_min
-from ValenciaXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from ValenciaXMusic.utils.decorators.language import language, languageCB
-from ValenciaXMusic.utils.inline import queue_back_markup, queue_markup
+from KingX import app
+from KingX.misc import db
+from KingX.utils import HottyBin, get_channeplayCB, seconds_to_min
+from KingX.utils.database import get_cmode, is_active_chat, is_music_playing
+from KingX.utils.decorators.language import language, languageCB
+from KingX.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
