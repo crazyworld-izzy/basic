@@ -4,17 +4,17 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from ValenciaXMusic import app
+from KingX import app
 from config import OWNER_ID
-from ValenciaXMusic.utils.database import (
+from KingX.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from ValenciaXMusic.utils.decorators.language import language
-from ValenciaXMusic.utils.formatters import alpha_to_int
+from KingX.utils.decorators.language import language
+from KingX.utils.formatters import alpha_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
@@ -25,7 +25,7 @@ IS_BROADCASTING = False
 async def braodcast_message(client, message, _):
     if message.from_user.id != OWNER_ID:
         return await message.reply_text(
-            "» **sɪʀғ ʏᴇʜ @JoinIndianNavy_007 ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ 😏**\n» ᴊᴏɪɴ @Cherished_Community ғᴏʀ ᴘʀᴏᴍᴏ"
+            "» **sɪʀғ ʏᴇʜ @BRANDEDKING82 ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ 😏**\n» ᴊᴏɪɴ @BRANDRD_BOT ғᴏʀ ᴘʀᴏᴍᴏ"
         )
     global IS_BROADCASTING
     if message.reply_to_message:
