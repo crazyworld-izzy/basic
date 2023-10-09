@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from ValenciaXMusic import app
-from ValenciaXMusic.utils.database import is_on_off
+from KingX import app
+from KingX.utils.database import is_on_off
 from config import LOGGER_ID
 
 
