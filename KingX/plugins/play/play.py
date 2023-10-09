@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from ValenciaXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ValenciaXMusic.core.call import Hotty
-from ValenciaXMusic.utils import seconds_to_min, time_to_seconds
-from ValenciaXMusic.utils.channelplay import get_channeplayCB
-from ValenciaXMusic.utils.decorators.language import languageCB
-from ValenciaXMusic.utils.decorators.play import PlayWrapper
-from ValenciaXMusic.utils.formatters import formats
-from ValenciaXMusic.utils.inline import (
+from KingX import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from KingX.core.call import Hotty
+from KingX.utils import seconds_to_min, time_to_seconds
+from KingX.utils.channelplay import get_channeplayCB
+from KingX.utils.decorators.language import languageCB
+from KingX.utils.decorators.play import PlayWrapper
+from KingX.utils.formatters import formats
+from KingX.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ValenciaXMusic.utils.logger import play_logs
-from ValenciaXMusic.utils.stream.stream import stream
+from KingX.utils.logger import play_logs
+from KingX.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
