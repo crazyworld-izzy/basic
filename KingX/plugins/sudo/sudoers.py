@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ValenciaXMusic import app
-from ValenciaXMusic.misc import SUDOERS
-from ValenciaXMusic.utils.database import add_sudo, remove_sudo
-from ValenciaXMusic.utils.decorators.language import language
-from ValenciaXMusic.utils.extraction import extract_user
-from ValenciaXMusic.utils.inline import close_markup
+from KingX import app
+from KingX.misc import SUDOERS
+from KingX.utils.database import add_sudo, remove_sudo
+from KingX.utils.decorators.language import language
+from KingX.utils.extraction import extract_user
+from KingX.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
@@ -48,7 +48,7 @@ async def userdel(client, message: Message, _):
 @language
 async def sudoers_list(client, message: Message, _):
     if message.from_user.id not in SUDOERS:
-        return await message.reply_text("💔 <b>ᴏᴡɴᴇʀs:</b>\n1➤ <a href='https://t.me/JoinIndianNavy_007'>🇷🇺⛦°╰𝐑֟֟𝐂╯°⛦ ➣🇵ιყυʂԋ⏤͟͟⛦⃕͜🇮🇳🇳</a>",
+        return await message.reply_text("💔 <b>ᴏᴡɴᴇʀs:</b>\n1➤ <a href='https://t.me/JoinIndianNavy_007'>🇷🇺⛦BRANDED KING</a>",
         disable_web_page_preview=True,
         parse_mode="html")
     text = _["sudo_5"]
