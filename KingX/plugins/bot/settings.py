@@ -10,8 +10,8 @@ from pyrogram.types import (
     InputMediaVideo,
 )
 
-from ValenciaXMusic import app
-from ValenciaXMusic.utils.database import (
+from KingX import app
+from KingX.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -27,15 +27,15 @@ from ValenciaXMusic.utils.database import (
     skip_off,
     skip_on,
 )
-from ValenciaXMusic.utils.decorators.admins import ActualAdminCB
-from ValenciaXMusic.utils.decorators.language import language, languageCB
-from ValenciaXMusic.utils.inline.settings import (
+from KingX.utils.decorators.admins import ActualAdminCB
+from KingX.utils.decorators.language import language, languageCB
+from KingX.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from ValenciaXMusic.utils.inline.start import private_panel
+from KingX.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID, MUSIC_BOT_NAME, START_IMG_URL
 
 
