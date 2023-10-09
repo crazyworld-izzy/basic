@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ValenciaXMusic import app
-from ValenciaXMusic.core.call import Hotty
-from ValenciaXMusic.misc import SUDOERS, db
-from ValenciaXMusic.utils import AdminRightsCheck
-from ValenciaXMusic.utils.database import is_active_chat, is_nonadmin_chat
-from ValenciaXMusic.utils.decorators.language import languageCB
-from ValenciaXMusic.utils.inline import close_markup, speed_markup
+from KingX import app
+from KingX.core.call import Hotty
+from KingX.misc import SUDOERS, db
+from KingX.utils import AdminRightsCheck
+from KingX.utils.database import is_active_chat, is_nonadmin_chat
+from KingX.utils.decorators.language import languageCB
+from KingX.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
