@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from ValenciaXMusic import LOGGER, YouTube, app
-from ValenciaXMusic.misc import db
-from ValenciaXMusic.utils.database import (
+from KingX import LOGGER, YouTube, app
+from KingX.misc import db
+from KingX.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from ValenciaXMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from ValenciaXMusic.utils.exceptions import AssistantErr
-from ValenciaXMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from ValenciaXMusic.utils.inline.play import stream_markup
-from ValenciaXMusic.utils.stream.autoclear import auto_clean
-from ValenciaXMusic.utils.thumbnails import get_thumb
+from KingX.utils.exceptions import AssistantErr
+from KingX.utils.formatters import check_duration, seconds_to_min, speed_converter
+from KingX.utils.inline.play import stream_markup
+from KingX.utils.stream.autoclear import auto_clean
+from KingX.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
