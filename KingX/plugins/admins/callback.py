@@ -3,10 +3,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ValenciaXMusic import YouTube, app
-from ValenciaXMusic.core.call import Hotty
-from ValenciaXMusic.misc import SUDOERS, db
-from ValenciaXMusic.utils.database import (
+from KingX import YouTube, app
+from KingX.core.call import Hotty
+from KingX.misc import SUDOERS, db
+from KingX.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -17,11 +17,11 @@ from ValenciaXMusic.utils.database import (
     music_on,
     set_loop,
 )
-from ValenciaXMusic.utils.decorators.language import languageCB
-from ValenciaXMusic.utils.formatters import seconds_to_min
-from ValenciaXMusic.utils.inline import close_markup, stream_markup, stream_markup_timer
-from ValenciaXMusic.utils.stream.autoclear import auto_clean
-from ValenciaXMusic.utils.thumbnails import get_thumb
+from KingX.utils.decorators.language import languageCB
+from KingX.utils.formatters import seconds_to_min
+from KingX.utils.inline import close_markup, stream_markup, stream_markup_timer
+from KingX.utils.stream.autoclear import auto_clean
+from KingX.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
