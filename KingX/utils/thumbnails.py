@@ -10,7 +10,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFo
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
-from VipX import app
+from KingX import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -117,15 +117,15 @@ async def gen_thumb(videoid, chat_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("VipX/assets/font2.ttf", 45)
-        ImageFont.truetype("VipX/assets/font2.ttf", 70)
-        arial = ImageFont.truetype("VipX/assets/font2.ttf", 30)
-        ImageFont.truetype("VipX/assets/font.ttf", 30)
+        font = ImageFont.truetype("KingX/assets/font2.ttf", 45)
+        ImageFont.truetype("KingX/assets/font2.ttf", 70)
+        arial = ImageFont.truetype("KingX/assets/font2.ttf", 30)
+        ImageFont.truetype("KingX/assets/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
                 (25, 0.1),
-                f"VIP  MUSIC",
+                f"BRANDED  MUSIC",
                 fill="white",
                 stroke_width=4,
                 stroke_fill="black",
@@ -222,7 +222,7 @@ async def gen_qthumb(videoid, chat_id):
         x = f.resize((1, 1))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"VipX/assets/bg.png")
+        bg = Image.open(f"KingX/assets/bg.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(1))
@@ -257,15 +257,15 @@ async def gen_qthumb(videoid, chat_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("VipX/assets/font2.ttf", 45)
-        ImageFont.truetype("VipX/assets/font2.ttf", 70)
-        arial = ImageFont.truetype("VipX/assets/font2.ttf", 30)
-        ImageFont.truetype("VipX/assets/font.ttf", 30)
+        font = ImageFont.truetype("KingX/assets/font2.ttf", 45)
+        ImageFont.truetype("KingX/assets/font2.ttf", 70)
+        arial = ImageFont.truetype("KingX/assets/font2.ttf", 30)
+        ImageFont.truetype("KingX/assets/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
                 (25, 0.1),
-                "VIP  MUSIC",
+                "BRANDED  MUSIC",
                 fill="white",
                 stroke_width=5,
                 stroke_fill="black",
