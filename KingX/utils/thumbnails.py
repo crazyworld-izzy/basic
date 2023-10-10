@@ -6,11 +6,11 @@ import aiofiles
 import aiohttp
 from unidecode import unidecode
 
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
 
-from BrandrdXMusic import app
 from config import YOUTUBE_IMG_URL
+from KingX import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -125,7 +125,7 @@ async def gen_thumb(videoid, chat_id):
         try:
             draw.text(
                 (25, 0.1),
-                f"BRANDED  MUSIC",
+                f"KING  MUSIC",
                 fill="white",
                 stroke_width=4,
                 stroke_fill="black",
@@ -222,7 +222,7 @@ async def gen_qthumb(videoid, chat_id):
         x = f.resize((1, 1))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"KingX/assets/bg.png")
+        bg = Image.open(f"VipX/assets/bg.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(1))
@@ -265,7 +265,7 @@ async def gen_qthumb(videoid, chat_id):
         try:
             draw.text(
                 (25, 0.1),
-                "BRANDED  MUSIC",
+                "KING  MUSIC",
                 fill="white",
                 stroke_width=5,
                 stroke_fill="black",
