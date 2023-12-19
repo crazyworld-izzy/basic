@@ -9,7 +9,7 @@ from pyrogram.enums import *
 
 #BOT FILE NAME
 from KingX import app as app
-from KingX.mongo.couples_db import _get_image, get_couple
+from KingX import _get_image, get_couple
 
 def dt():
     now = datetime.now()
