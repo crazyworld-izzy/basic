@@ -11,7 +11,7 @@ import asyncio
 
 get_font = lambda font_size, font_path: ImageFont.truetype(font_path, font_size)
 resize_text = (
-    lambda text_size, text: (text[:text_size] + "...").upper()
+    lambda text_size, text: (text[:text_size] + ...).upper()
     if len(text) > text_size
     else text.upper()
 )
