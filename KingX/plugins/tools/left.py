@@ -93,15 +93,15 @@ async def member_has_left(client: app, member: ChatMemberUpdated):
             )
         
             caption = f"""
-**❅────✦ New_Member_Left ✦────❅**
+❅────✦ New_Member_Left ✦────❅
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰
-**➻ ɴᴀᴍᴇ »** {user.mention}
-**➻ ɪᴅ »** `{user.id}`
-**➻ ᴜ_ɴᴀᴍᴇ »** @{user.username}
+➻ ɴᴀᴍᴇ » {user.mention}
+➻ ɪᴅ » `{user.id}`
+➻ ᴜ_ɴᴀᴍᴇ » @{user.username}
 ▰▰▰▰▰▰▰▰▰▰▰▰▰
 
-**❅─────✧❅✦❅✧─────❅**
+❅─────✧❅✦❅✧─────❅
 """,
             button_text = "๏ ᴠɪᴇᴡ ᴜsᴇʀ ๏"
 
