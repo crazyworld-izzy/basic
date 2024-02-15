@@ -128,7 +128,7 @@ async def ctest(_, message):
 #𝐍ᴇxᴛ 𝐂ᴏᴜᴘʟᴇs 𝐖ɪʟʟ 𝐁ᴇ 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐎ɴ {tomorrow} !!**
 #"""
  
-  [InlineKeyboardButton( text="+ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+  [InlineKeyboardButton( text="+ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")]
 
 
     #        await message.reply_photo(b, caption=TXT)
