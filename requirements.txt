@@ -30,6 +30,8 @@ python-telegram-bot==20.7
 tgcrypto
 telegraph
 unidecode
+img2pdf
+cloudscraper
 yt-dlp
 youtube-search
 youtube-search-python
