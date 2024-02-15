@@ -127,7 +127,7 @@ async def ctest(_, message):
 #➖➖➖➖➖➖➖➖➖➖➖➖
 #𝐍ᴇxᴛ 𝐂ᴏᴜᴘʟᴇs 𝐖ɪʟʟ 𝐁ᴇ 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐎ɴ {tomorrow} !!**
 #"""
- button_text = "๏ ᴠɪᴇᴡ ᴜsᴇʀ ๏"
+
 
 # Send the message with the photo, caption, and button
             message = await client.send_photo(
@@ -135,7 +135,7 @@ async def ctest(_, message):
                 photo=couples_photo,
                 caption=caption,
                 reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton(button_text, url=f"https://t.me/{BOT_USERNAME}?startgroup=true)]
+                    [InlineKeyboardButton(ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ, url=f"https://t.me/{BOT_USERNAME}?startgroup=true)]
                 ])
             )
 
