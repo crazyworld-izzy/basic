@@ -128,17 +128,6 @@ async def ctest(_, message):
 #𝐍ᴇxᴛ 𝐂ᴏᴜᴘʟᴇs 𝐖ɪʟʟ 𝐁ᴇ 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐎ɴ {tomorrow} !!**
 #"""
 
-
-# Send the message with the photo, caption, and button
-            message = await client.send_photo(
-                chat_id=member.chat.id,
-                photo=couples_photo,
-                caption=caption,
-                reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton(ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ, url=f"https://t.me/{BOT_USERNAME}?startgroup=true)]
-                ])
-            )
-
  #        await message.reply_photo(b, caption=TXT)
         # await msg.delete()
     except Exception as e:
