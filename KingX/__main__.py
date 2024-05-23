@@ -1,6 +1,6 @@
 import asyncio
 import importlib
-
+from sys import argv
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
@@ -11,6 +11,10 @@ from KingX.misc import sudo
 from KingX.plugins import ALL_MODULES
 from KingX.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
+
+from KingX.plugins.tools.clone import restart_bots
+
+
 
 
 async def init():
