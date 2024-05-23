@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import ChatPermissions
 from KingX import app
-from KingX.utils.vip_ban import admin_filter
+from KingX.utils.Hotty_ban import admin_filter
 
 
 SPAM_CHATS = []
