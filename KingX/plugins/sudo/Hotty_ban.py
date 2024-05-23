@@ -4,7 +4,7 @@ from KingX import app, userbot
 from KingX.misc import SUDOERS
 from pyrogram import *
 from pyrogram.types import *
-from KingX.utils.vip_ban import admin_filter
+from KingX.utils.Hotty_ban import admin_filter
 
 
 Hotty_text = [
