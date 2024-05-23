@@ -191,7 +191,7 @@ async def set_assistant_new(chat_id, number):
 
 
 async def set_assistant(chat_id):
-    from KingX.core.userbot import assistants
+    from VIPMUSIC.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -205,7 +205,7 @@ async def set_assistant(chat_id):
 
 
 async def get_assistant(chat_id: int) -> str:
-    from KingX.core.userbot import assistants
+    from VIPMUSIC.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
@@ -232,7 +232,7 @@ async def get_assistant(chat_id: int) -> str:
 
 
 async def set_calls_assistant(chat_id):
-    from KingX.core.userbot import assistants
+    from VIPMUSIC.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -245,7 +245,7 @@ async def set_calls_assistant(chat_id):
 
 
 async def group_assistant(self, chat_id: int) -> int:
-    from KingX.core.userbot import assistants
+    from VIPMUSIC.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
@@ -872,7 +872,7 @@ async def cleanmode_on(chat_id: int):
 
 # Audio Video Limit
 
-
+"""
 from pytgcalls.types import AudioQuality, VideoQuality
 
 
@@ -933,7 +933,7 @@ async def get_video_bitrate(chat_id: int) -> str:
     elif str(mode) == "SD_480p":
         return VideoQuality.SD_480p
     elif str(mode) == "SD_360p":
-        return VideoQuality.SD_360p
+        return VideoQuality.SD_360p"""
 
 
 async def is_served_user_clone(user_id: int) -> bool:
