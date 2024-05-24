@@ -33,7 +33,7 @@ from KingX.utils.inline.settings import (
     setting_markup,
     vote_mode_markup,
 )
-from VIPMUSIC.utils.inline.start import private_panel
+from KingX.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
