@@ -79,7 +79,7 @@ async def music_off(chat_id: int):
 async def pause_admin(cli, message: Message, _, chat_id):
 
     await music_off(chat_id)
-    await VIP.pause_stream(chat_id)
+    await Hotty.pause_stream(chat_id)
 
     buttons = [
         [
