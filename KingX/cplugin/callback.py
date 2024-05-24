@@ -606,7 +606,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_22"])
         try:
-            await VIP.seek_stream(
+            await Hotty.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
