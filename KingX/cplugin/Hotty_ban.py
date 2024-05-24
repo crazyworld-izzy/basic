@@ -53,7 +53,7 @@ async def restriction_app(client: Client, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
     if len(message.text) < 2:
-        return await message.reply(random.choice(vip_text))
+        return await message.reply(random.choice(Hotty_text))
     bruh = message.text.split(maxsplit=1)[1]
     data = bruh.split(" ")
 
