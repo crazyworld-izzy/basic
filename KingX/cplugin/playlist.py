@@ -47,7 +47,7 @@ user_command_count = {}
 # Define the threshold for command spamming (e.g., 20 commands within 60 seconds)
 SPAM_THRESHOLD = 2
 SPAM_WINDOW_SECONDS = 5
-from VIPMUSIC.core.mongo import mongodb
+from KingX.core.mongo import mongodb
 
 
 playlistdbc = mongodb.playlistclone
@@ -527,7 +527,7 @@ async def add_playlist_clone(client: Client, message: Message, _):
             return await message.reply_text(str(e))
             pass
     else:
-        from VIPMUSIC import YouTube
+        from KingX import YouTube
 
         # Add a specific song by name
         query = " ".join(message.command[1:])
@@ -716,12 +716,12 @@ async def add_playlists_clone(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
     user_id = CallbackQuery.from_user.id
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     _check = await get_playlist_clone(user_id, videoid)
     if _check:
         try:
-            from VIPMUSIC import YouTube
+            from KingX import YouTube
 
             return await CallbackQuery.answer(_["playlist_8"], show_alert=True)
         except:
@@ -787,7 +787,7 @@ async def delete_all_playlists_clone(client, message, _):
         # If more than the spam window time has passed, reset the command count and update the message timestamp
         user_command_count[user_id] = 1
         user_last_message_time[user_id] = current_time
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     _playlist = await get_playlist_names_clone(user_id)
     if _playlist:
@@ -803,7 +803,7 @@ async def delete_all_playlists_clone(client, message, _):
 @Client.on_callback_query(filters.regex("del_playlist") & ~BANNED_USERS)
 @languageCB
 async def del_plist_clone(client, CallbackQuery, _):
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
@@ -826,7 +826,7 @@ async def del_plist_clone(client, CallbackQuery, _):
 @Client.on_callback_query(filters.regex("delete_whole_playlist") & ~BANNED_USERS)
 @languageCB
 async def del_whole_playlist_clone(client, CallbackQuery, _):
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     _playlist = await get_playlist_names_clone(CallbackQuery.from_user.id)
     for x in _playlist:
@@ -853,7 +853,7 @@ async def get_playlist_playmode_clone(client, CallbackQuery, _):
 @Client.on_callback_query(filters.regex("delete_warning") & ~BANNED_USERS)
 @languageCB
 async def delete_warning_message_clone(client, CallbackQuery, _):
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     try:
         await CallbackQuery.answer()
@@ -866,7 +866,7 @@ async def delete_warning_message_clone(client, CallbackQuery, _):
 @Client.on_callback_query(filters.regex("home_play") & ~BANNED_USERS)
 @languageCB
 async def home_play_clone(client, CallbackQuery, _):
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     try:
         await CallbackQuery.answer()
@@ -881,7 +881,7 @@ async def home_play_clone(client, CallbackQuery, _):
 @Client.on_callback_query(filters.regex("del_back_playlist") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist_clone(client, CallbackQuery, _):
-    from VIPMUSIC import YouTube
+    from KingX import YouTube
 
     user_id = CallbackQuery.from_user.id
     _playlist = await get_playlist_names_clone(user_id)
