@@ -19,7 +19,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from KingX.utils.vip_ban import admin_filter
+from KingX.utils.Hotty_ban import admin_filter
 from KingX import app
 from pyrogram import filters
 from pyrogram.errors import RPCError
