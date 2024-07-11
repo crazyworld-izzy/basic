@@ -19,7 +19,7 @@ pydub
 NTgCalls==1.2.1
 pycountry
 heroku3
-motor==3.3.2
+motor==3.5.1
 pillow==9.5.0
 psutil
 wget
